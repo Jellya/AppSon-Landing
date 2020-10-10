@@ -1,31 +1,7 @@
-
-var acc = document.getElementsByClassName("FAQ__quest");
-var but = document.getElementsByClassName("FAQ__button");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var answer = this.nextElementSibling;
-    if (answer.style.maxHeight) {
-        answer.style.maxHeight = null;
-    } else {
-        answer.style.maxHeight = answer.scrollHeight + "px";
-    } 
+$(function(){
+  $("a[href^='#']").click(function(){
+          var _href = $(this).attr("href");
+          $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+          return false;
   });
-}
-
-  but[0].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var content = this.previousElementSibling;
-  if (content.style.maxHeight) {
-    content.style.maxHeight = null;
-  } else {
-    content.style.maxHeight =1000+content.scrollHeight + "px";
-  } 
-});
-
-
-$(document).ready(function(){
-  $('.features-feedback').slick({});
 });

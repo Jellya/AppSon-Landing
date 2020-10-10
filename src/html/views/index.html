@@ -1,11 +1,85 @@
-<% var data = {
-  title: " ",
-  desc: " ",
-  keyw: " "
-}; %>
-<%= _.template(require('./../includes/header.html').default)(data) %>
+<% var data = { title: " ", desc: " ", keyw: " " }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+<section class="features">
+  <div class="container">
+    <div class="features__items">
+      <div class="features__card">
+        <img src="img/icon1.svg" alt="icon" class="features__icon" />
+        <h3 class="features__title">Analysis</h3>
+        <p class="features__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+          alias eaque. Maiores voluptates velit possimus.
+        </p>
+      </div>
+      <div class="features__card">
+        <img src="img/icon2.svg" alt="icon" class="features__icon" />
+        <h3 class="features__title">Clean Design</h3>
+        <p class="features__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+          alias eaque. Maiores voluptates velit possimus.
+        </p>
+      </div>
+      <div class="features__card">
+        <img src="img/icon3.svg" alt="icon" class="features__icon" />
+        <h3 class="features__title">Messaging</h3>
+        <p class="features__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+          alias eaque. Maiores voluptates velit possimus.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="about container" id="about">
+    <div class="about__block">
+      <div class="about__photos">
+        <div class="about__photo-big">
+          <img src="img/image1.jpg" alt="#"/>
+        </div>
+        <div class="about__photo-small">
+          <img src="img/image2.jpg" alt="#"/>
+        </div>
+      </div>
+      <div class="about__descr">
+        <h2 class="about__title">Easy Messaging</h2>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
+          modi quis consequatur expedita fugit provident corporis voluptates
+          vel! Quis, totam? Atque possimus laboriosam nesciunt laborum quo alias
+          quas laborum quo alias. 
+        </p>
+        <a href="#" class="about__more">Read More</a>
+      </div>
+      <div class="about__background">
+        <img src="img/blue-object.svg" alt="#">
+      </div>
+    </div>
+    <div class="about__block">
+      <div class="about__photos">
+        <div class="about__photo-big">
+          <img src="img/image3.jpg" alt="#"/>
+        </div>
+        <div class="about__photo-small">
+          <img src="img/image4.jpg" alt="#"/>
+        </div>
+      </div>
+      <div class="about__descr">
+        <h2 class="about__title">Keep In Touch</h2>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
+          modi quis consequatur expedita fugit provident corporis voluptates
+          vel! Quis, totam? Atque possimus laboriosam nesciunt laborum quo alias
+          quas laborum quo alias. 
+        </p>
+        <a href="#" class="about__more">Read More</a>
+      </div>
+      <div class="about__background">
+        <img src="img/blue-object.svg" alt="#">
+      </div>
+    </div>
+    
+</section>
 
-
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <%= _.template(require('./../includes/footer.html').default)(data) %>
