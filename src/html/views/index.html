@@ -32,54 +32,230 @@ _.template(require('./../includes/header.html').default)(data) %>
 </section>
 
 <section class="about container" id="about">
-    <div class="about__block">
-      <div class="about__photos">
-        <div class="about__photo-big">
-          <img src="img/image1.jpg" alt="#"/>
-        </div>
-        <div class="about__photo-small">
-          <img src="img/image2.jpg" alt="#"/>
-        </div>
+  <div class="about__block">
+    <div class="about__photos">
+      <div class="about__photo-big">
+        <img src="img/image1.jpg" alt="#" />
       </div>
-      <div class="about__descr">
-        <h2 class="about__title">Easy Messaging</h2>
-        <p class="about__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
-          modi quis consequatur expedita fugit provident corporis voluptates
-          vel! Quis, totam? Atque possimus laboriosam nesciunt laborum quo alias
-          quas laborum quo alias. 
-        </p>
-        <a href="#" class="about__more">Read More</a>
-      </div>
-      <div class="about__background">
-        <img src="img/blue-object.svg" alt="#">
+      <div class="about__photo-small">
+        <img src="img/image2.jpg" alt="#" />
       </div>
     </div>
-    <div class="about__block">
-      <div class="about__photos">
-        <div class="about__photo-big">
-          <img src="img/image3.jpg" alt="#"/>
-        </div>
-        <div class="about__photo-small">
-          <img src="img/image4.jpg" alt="#"/>
-        </div>
+    <div class="about__descr">
+      <h2 class="about__title">Easy Messaging</h2>
+      <p class="about__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
+        modi quis consequatur expedita fugit provident corporis voluptates vel!
+        Quis, totam? Atque possimus laboriosam nesciunt laborum quo alias quas
+        laborum quo alias.
+      </p>
+      <a href="#" class="about__more">Read More</a>
+    </div>
+    <div class="about__background">
+      <img src="img/blue-object.svg" alt="#" />
+    </div>
+  </div>
+  <div class="about__block">
+    <div class="about__photos">
+      <div class="about__photo-big">
+        <img src="img/image3.jpg" alt="#" />
       </div>
-      <div class="about__descr">
-        <h2 class="about__title">Keep In Touch</h2>
-        <p class="about__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
-          modi quis consequatur expedita fugit provident corporis voluptates
-          vel! Quis, totam? Atque possimus laboriosam nesciunt laborum quo alias
-          quas laborum quo alias. 
-        </p>
-        <a href="#" class="about__more">Read More</a>
-      </div>
-      <div class="about__background">
-        <img src="img/blue-object.svg" alt="#">
+      <div class="about__photo-small">
+        <img src="img/image4.jpg" alt="#" />
       </div>
     </div>
-    
+    <div class="about__descr">
+      <h2 class="about__title">Keep In Touch</h2>
+      <p class="about__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
+        modi quis consequatur expedita fugit provident corporis voluptates vel!
+        Quis, totam? Atque possimus laboriosam nesciunt laborum quo alias quas
+        laborum quo alias.
+      </p>
+      <a href="#" class="about__more">Read More</a>
+    </div>
+    <div class="about__background">
+      <img src="img/blue-object.svg" alt="#" />
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="container">
+    <h2 class="how__title">How Does It Works?</h2>
+    <p class="how__text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate
+      iste placeat ipsam aliquam quidem. Consequatur architecto recusandae culpa
+      nisi.
+    </p>
+    <div class="how-steps">
+      <div class="how-steps__item">
+        <div class="how-steps__icon">
+          <img src="img/step-icon1.svg" alt="#" />
+        </div>
+        <h3 class="how-steps__title">Create An Account</h3>
+        <p class="how-steps__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem,
+          optio?
+        </p>
+      </div>
+      <div class="how-steps__item">
+        <div class="how-steps__icon">
+          <img src="img/step-icon2.svg" alt="#" />
+        </div>
+        <h3 class="how-steps__title">Create An Account</h3>
+        <p class="how-steps__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem,
+          optio?
+        </p>
+      </div>
+      <div class="how-steps__item">
+        <div class="how-steps__icon">
+          <img src="img/step-icon3.svg" alt="#" />
+        </div>
+        <h3 class="how-steps__title">Create An Account</h3>
+        <p class="how-steps__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem,
+          optio?
+        </p>
+      </div>
+      <div class="how-steps__line">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <line
+            x1="0"
+            y1="30"
+            x2="500"
+            y2="30"
+            stroke="#0f7bff"
+            stroke-width="1"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing container">
+  <div class="pricing__desc">
+    <h2 class="pricing__title">Pricing Plan</h2>
+    <p class="pricing__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid et ipsum,
+      repellendus dolor ipsam consequatur dolor ipsam consequatur ipsum dolor sit amet.
+    </p>
+    <form class="pricing__radiobuttons">
+      <input type="radio" name="rd1" id="pay1" class="radiobutton"/>
+        <label class="radiobutton-label" for="rd1">Monthly</label>
+      
+        <input type="radio" name="rd1" id="pay1" class="radiobutton second"/>
+          <label class="radiobutton-label second" for="rd1">Yearly</label>
+    </form>
+  </div>
+    <div class="pricing__cards">
+      <div class="pricing__card">
+        <div class="pricing__icon">
+          <img src="img/pricing-icon1.svg" alt="#">
+        </div>
+        <h3 class="pricing__type">Standard</h3>
+        <p class="pricing__param">
+          2gb Hosting </br>
+          10 Custom Domain </br>
+          SSD Hosting</br>
+          50 gb Bandwith</br>
+          Free Support
+        </p>
+        <div class="pricing__price">19.00</div>
+        <button class="pricing__button active" >Try Now</button>
+      </div>
+      <div class="pricing__card">
+        <div class="pricing__icon">
+          <img src="img/pricing-icon2.svg" alt="#">
+        </div>
+        <h3 class="pricing__type">Premium</h3>
+        <p class="pricing__param">
+          2gb Hosting </br>
+          10 Custom Domain </br>
+          SSD Hosting</br>
+          50 gb Bandwith</br>
+          Free Support
+        </p>
+        <div class="pricing__price">49.00</div>
+        <button class="pricing__button" >Try Now</button>
+      </div>
+    </div>
+</section>
+
+<section class="feedback">
+  <img src="img/feedback.png" alt="#" class="feedback__image">
+  <div class="feedback__block">
+    <h2 class="feedback__title">Trusted By More Than 55M Peoples</h2>
+    <div class="feedback__slider">
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+      <div class="feedback__item">
+        <p class="feedback__name">Raisa Moni</p>
+        <p class="feedback__post">Envano Customer</p>
+        <p class="feedback__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque maxime minima velit ad dicta.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <%= _.template(require('./../includes/footer.html').default)(data) %>
