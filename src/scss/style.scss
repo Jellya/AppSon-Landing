@@ -33,7 +33,9 @@ $font-stack: "Quicksand", sans-serif;
 html,
 body {
   height: 100%;
+  max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
   font-size: 100%;
   line-height: 27px;
   font-size: 16px;
@@ -203,7 +205,6 @@ h6 {
   max-width: 1160px;
   padding: 0 10px 0 20px;
   margin: 0 auto;
-  position: relative;
 }
 
 .features {
@@ -314,11 +315,22 @@ h6 {
   text-align: center;
   background-color: #f5fcfd;
   margin-bottom: 120px;
+  position: relative;
+  &__elem {
+    z-index: 0;
+    position: relative;
+    top: 125px;
+  }
   &__title {
-    margin-top: 155px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 75px;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 30px;
+    z-index: 5;
   }
   &__text {
     width: 60%;
@@ -349,8 +361,11 @@ h6 {
       color: #929292;
     }
     &__line {
+      border-bottom: 2px solid #0f7bff;
+      width: 760px;
       position: absolute;
-      left: 100px;
+      left: 180px;
+      top: 50px;
     }
   }
 }
@@ -482,7 +497,7 @@ h6 {
 .feedback {
   display: flex;
   background-color: #f5fcfd;
-  margin-bottom: 145px;
+  margin-bottom: 80px;
   width: 100%;
   &__image {
     object-fit: contain;
@@ -578,16 +593,22 @@ h6 {
   align-items: center;
   width: 100%;
   margin-bottom: 120px;
+  &__elem {
+    z-index: 0;
+    position: relative;
+    top: 50px;
+  }
   &__title {
+    position: relative;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 30px;
   }
   &__desc {
-    width: 60%;
     text-align: center;
     color: #929292;
     margin-bottom: 45px;
+    width: 60%;
   }
   &__text {
     color: #929292;
@@ -598,6 +619,7 @@ h6 {
   }
   &__blocks {
     display: flex;
+    width: 100%;
   }
   &__block {
     display: flex;
@@ -663,9 +685,8 @@ h6 {
 	background-color: #f5fcfd;
 	&__block {
 		display: flex;
-		justify-content: space-evenly;
-		width: 55%;
-		margin: 0 auto;
+    margin: 0 auto;
+    justify-content: center;
 	}
 	&__desc {
 		display: flex;
@@ -674,7 +695,8 @@ h6 {
 	&__title {
 		font-size: 32px;
 		font-weight: 700;
-		margin-bottom: 25px;
+    margin-bottom: 25px;
+    margin-right: 150px;
 	}
 	&__text {
 		color: #929292;
@@ -685,7 +707,7 @@ h6 {
 		color: white;
 		background-color: #0f7bff;
 		width: 260px;
-		border-radius: 5px;
+    border-radius: 5px;
 		&:hover {
 			background-color: #0252b4;
 		}
@@ -741,6 +763,7 @@ footer {
       }
     }
     &__bottom {
+      position: relative;
       display: flex;
       padding: 40px 0;
       justify-content: space-between;
